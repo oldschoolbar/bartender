@@ -12,7 +12,6 @@
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="http://code.jquery.com/jquery-latest.js"></script> <!-- latest jq -->
 <script src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
 <script type="text/javascript" src="js/jcarousel.basic.js"></script>
@@ -92,8 +91,17 @@ $(function() {
 	width: 600px ;
 }
 
+.logo {
+	width: 250px;
+	float: left;
+	margin-right: 20px;
+}
+.float-right {
+
+}
+
 /* Media rules */
-@media screen and (max-device-width: 1024px) {
+@media screen and (max-device-width: 480px) {
 	.absolut {
 		margin-left: auto;
 	}
@@ -105,6 +113,9 @@ $(function() {
 	.casousel-size {
 		width: 300px ;
 		height: 100px;
+	}
+	.container-height {
+		height: 100%;
 	}
 }
 
@@ -125,8 +136,8 @@ $(function() {
 
 				</ul>
 				<ul class="nav navbar-nav navbar-right"> 
-					<li><a href="#">О нас</a></li>
 					<li><a href="#">Контакты</a></li>
+					<li><a href="#">О нас</a></li>
 				</ul>
 			</div>
 		</div>	
@@ -143,22 +154,23 @@ $(function() {
 		 <p>-драйвовое Бармен-шоу
 		 </div>
 	</div>
-		<a name="gorka"> </a> <!-- Anchor for second block -->
+
+	<a name="gorka"> </a> <!-- Anchor for second block -->
 	<div class="container"> 
 		<div class="jumbotron cont-height">
 			<div class="jcarousel-wrapper">
          <div class="jcarousel">
              <ul>
             	 <li><img src="img-main/gorka.jpeg" alt="" class="carousel-size"></li>
-               <li><img src="img-main/gorka_2.jpg" alt=""class="carousel-size"></li>
-               <li><img src="img-main/gorka_3.jpg" alt=""class="carousel-size"></li>
+               <li><img src="img-main/gorka_2.jpg" alt="" class="carousel-size"></li>
+               <li><img src="img-main/gorka_3.jpg" alt="" class="carousel-size"></li>
              </ul>
          </div>
     	</div>
     <div class="absolut">
 		<h2>Горка из шампанского</h2>
 		<p>Самый подходящий вариант для встречи гостей, под фуршетный и сладкий стол. Декор и форма горки может быть на ваш вкус.
-		<p>В стоимость входит: бокалы, установка пирамиды, доставка, а так-же украшение сухим льдом, работа бармена.</div>
+		<p>В стоимость входит: аренда бокалов, установка пирамиды, доставка, а так-же украшение сухим льдом, работа бармена.</div>
 		</div>
 	</div>
 
@@ -171,6 +183,16 @@ $(function() {
 		</div>
 		</div>
 		</div>
-    <br>
+   
+  <div class="container">
+  	<div class="jumbotron">
+  	<img src="img-main/logo.png" class="logo">
+  		<div class="float-right">
+  			<p>Old School Bar существует с 2010 года.
+  			<p>Команда профессионалов предостовляет все услуги связанные с барной индустрией. Проведение лекций и мастер-классов, обучение на должность бармена. Составлениеи барных карт. Обустройство и наполнение инвентарём рабочего места бармена. Выездной коктейль-бар, горка из шампанского и коктейлей, бармен-шоу, детская шоу программа.
+  		</div>
+  	</div>
+  </div>
+
 </body>
 </html>
