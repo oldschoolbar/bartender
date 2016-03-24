@@ -17,6 +17,7 @@
 <script type="text/javascript" src="js/jcarousel.basic.js"></script>
 <script type="text/javascript" scr="js/autoscroll.js"></script>
 <script type="text/javascript">
+
 $(function() {
     $('.jcarousel')
         .jcarousel({
@@ -40,13 +41,16 @@ $(function() {
 	border: 1px solid #fff;
 	border-radius: 10px;
 }
+
 .img-align-right {
 	float: right;
 }
+
 .img-align-left {
 	float: left;
 	margin-right: 15px;
 }
+
 .height-img {
 	width:auto;
   max-width: 30%;
@@ -55,17 +59,54 @@ $(function() {
 .height-block {
 	height: 500px;
 }
+
 .href-decor {
 	text-decoration: none;
 	color: #333;
 }
+
 .href-decor:hover {
 	text-decoration: none;
 	color: #333;
 }
+
 .cont-height {
 	height: 550px;
 }
+
+.container-height {
+	height: 360px;
+}
+
+.jcarousel-wrapper {
+	position: absolute;	
+}
+
+.absolut {
+	margin-left: 60%;
+}
+
+.carousel-size {
+	height: 400px ;
+	width: 600px ;
+}
+
+/* Media rules */
+@media screen and (max-device-width: 480px) {
+	.absolut {
+		margin-left: auto;
+	}
+	.jcarousel-wrapper {
+		visibility: hidden;
+		width: 300px;
+		height: 100px;
+	}
+	.casousel-size {
+		width: 300px ;
+		height: 100px;
+	}
+}
+
 </style>
 </head>
 
@@ -101,26 +142,32 @@ $(function() {
 		 <p>-драйвовое Бармен-шоу
 		 </div>
 	</div>
-
+		<a name="gorka"> </a> <!-- Anchor for second block -->
 	<div class="container"> 
 		<div class="jumbotron cont-height">
 			<div class="jcarousel-wrapper">
          <div class="jcarousel">
              <ul>
-            	 <li><img src="img-main/gorka.jpeg" width="600" height="400" alt=""></li>
-               <li><img src="img-main/gorka_2.jpg" width="600" height="400" alt=""></li>
-               <li><img src="img-main/gorka_3.jpg" width="600" height="400" alt=""></li>
+            	 <li><img src="img-main/gorka.jpeg" alt="" class="carousel-size"></li>
+               <li><img src="img-main/gorka_2.jpg" alt=""class="carousel-size"></li>
+               <li><img src="img-main/gorka_3.jpg" alt=""class="carousel-size"></li>
              </ul>
          </div>
     	</div>
-		<h2><a name="gorka" class="href-decor">Горка из шампанского</a></h2>
+    <div class="absolut">
+		<h2>Горка из шампанского</h2>
 		<p>Самый подходящий вариант для встречи гостей, под фуршетный и сладкий стол. Декор и форма горки может быть на ваш вкус.
 		<p>В стоимость входит: бокалы, установка пирамиды, доставка, а так-же украшение сухим льдом, работа бармена.</div>
+		</div>
 	</div>
 
 	<div class="container">
-		<div class="jumbotron"> <h2><a name="coctail-bar" class="href-decor">Коктейль-бар</a></h2>
-		<p>Old School Bar поможет устроить не забываемую вечеринку с настоящим профессиональным баром. Коктейль-бар - неотъемлемая  часть любого праздника и мероприятия. Предоставляем для Вас более 100 видов коктейлей на выбор.
+		<div class="jumbotron"> 
+		<img src="img-main/coctail-bar.jpg" class="main-images img-align-right" >
+		<div class="container-height"><h2><a name="coctail-bar" class="href-decor">Коктейль-бар</a></h2>
+		<p>Old School Bar поможет устроить не забываемую вечеринку с настоящим профессиональным баром. 
+		<p>Коктейль-бар - неотъемлемая  часть любого праздника и мероприятия. Предоставляем для Вас более 100 видов коктейлей на выбор.
+		</div>
 		</div>
 		</div>
     <br>
